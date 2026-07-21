@@ -4,128 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universitas Handayani Makassar</title>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
         }
-        body {
-            background: #f4f6f9;
+
+        body{
+            background:#f4f6f9;
         }
-        header {
-            background: #003366;
-            color: white;
-            text-align: center;
-            padding: 25px;
+
+        /* Menu */
+        .menu-navigasi{
+            background:#0b63ce;
+            text-align:center;
+            padding:15px;
+            width:100%;
         }
-        header h1 {
-            font-size: 38px;
+
+        .menu-navigasi a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            font-size:17px;
         }
-        header p {
-            font-size: 18px;
-            margin-top: 14px;
+
+        .menu-navigasi a:hover{
+            color:#ffd700;
         }
-        nav {
-            background: #087bee;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+
+        /* Header */
+        header{
+            background:#003366;
+            color:white;
+            padding:20px;
         }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
+
+        .header-container{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:20px;
         }
-        nav ul li a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 18px 22px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.3s;
+
+        .logo{
+            width:90px;
+            height:auto;
         }
-        nav ul li a:hover {
-            background: #5b7e47;
-            color: #f84c4c;
+
+        header h1{
+            font-size:38px;
         }
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
-                url("banner.jpg");
-            background-size: cover;
-            background-position: center;
-            min-height: 550px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 40px;
+
+        /* Hero */
+        .hero{
+            background:
+            linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+            url("banner.jpg");
+
+            background-size:cover;
+            background-position:center;
+            min-height:550px;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:40px;
         }
-        .hero-content {
-            max-width: 950px;
-            margin: auto;
+
+        .hero-content{
+            max-width:900px;
         }
-        .hero h1,
-        .hero h2,
-        .hero p,
-        .hero h3 {
-            font-size: 25px;
-            line-height: 1.7;
-            margin-bottom: 15px;
+
+        .hero h1{
+            font-size:42px;
+            margin-bottom:15px;
         }
-        .hero h1 {
-            color: white;
-            font-weight: bold;
+
+        .hero h2{
+            font-size:28px;
+            margin-bottom:15px;
         }
-        .hero h2 {
-            color: white;
-            font-weight: bold;
+
+        .hero p{
+            font-size:22px;
+            line-height:1.8;
+            margin-bottom:20px;
         }
-        .hero p {
-            color: white;
-            font-weight: normal;
+
+        .hero h3{
+            color:#ffd700;
+            font-style:italic;
+            font-size:24px;
         }
-        .hero h3 {
-            color: #ffd700;
-            font-style: italic;
-            font-weight: bold;
-        }
-        @media (max-width:768px) {
-            nav ul {
-                flex-direction: column;
+
+        @media(max-width:768px){
+
+            .header-container{
+                flex-direction:column;
             }
-            nav ul li a {
-                text-align: center;
+
+            .logo{
+                width:70px;
             }
-            .hero h1,
-            .hero h2,
-            .hero p,
-            .hero h3 {
-                font-size: 25px;
+
+            header h1{
+                font-size:28px;
+                text-align:center;
+            }
+
+            .menu-navigasi a{
+                display:block;
+                padding:8px;
+            }
+
+            .hero h1{
+                font-size:30px;
+            }
+
+            .hero h2{
+                font-size:22px;
+            }
+
+            .hero p{
+                font-size:18px;
+            }
+
+            .hero h3{
+                font-size:20px;
             }
         }
-        .menu-navigasi {
-            background: #0b63ce;
-            text-align: center;
-            padding: 15px;
-            width: 100%;
-        }
-        .menu-navigasi a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        .menu-navigasi a:hover {
-            color: #ffd700;
-        }
+
     </style>
 </head>
+
 <body>
+
     <div class="menu-navigasi">
         <a href="Home Page.html">Home</a>
         <a href="About.html">About</a>
@@ -135,22 +155,34 @@
         <a href="Pendaftaran.html">Pendaftaran</a>
         <a href="Kontak.html">Kontak</a>
     </div>
+
     <header>
-        <h1>UNIVERSITAS HANDAYANI MAKASSAR</h1>
+        <div class="header-container">
+            <img src="logo.png" alt="Logo Universitas Handayani Makassar" class="logo">
+
+            <h1>UNIVERSITAS HANDAYANI MAKASSAR</h1>
+        </div>
     </header>
+
     <section class="hero">
         <div class="hero-content">
+
             <h2>Selamat Datang di Website Profil</h2>
+
             <h1>Universitas Handayani Makassar</h1>
+
             <p>
                 Universitas Handayani Makassar merupakan perguruan tinggi yang
                 berkomitmen menghasilkan lulusan yang unggul, inovatif, dan
                 berkarakter melalui penyelenggaraan pendidikan yang berkualitas.
             </p>
+
             <h3>
                 "Belajar • Berkarya • Berinovasi • Mengabdi untuk Indonesia"
             </h3>
+
         </div>
     </section>
+
 </body>
 </html>
