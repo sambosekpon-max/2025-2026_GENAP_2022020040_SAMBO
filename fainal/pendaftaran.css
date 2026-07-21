@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .containerpendaftaran {
     width: 80%;
     margin: 20px auto;
@@ -13,42 +12,33 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 header {
     text-align: left;
     margin-bottom: 20px;
-    
 }
 header {
     text-align: center;
 }
-
 form {
     max-width: 600px;
     margin: 0 auto;
 }
-
 fieldset {
     margin-bottom: 20px;
     border: 1px solid #0c0c0c;
     padding: 10px;
     border-radius: 5px;
 }
-
-legend {
-    
+legend { 
     font-weight: bold;
 }
-
 .form-group {
     margin-bottom: 15px;
 }
-
 label {
     display: block;
     margin-bottom: 5px;
 }
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -59,7 +49,6 @@ select {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
-
 button {
     background-color: #333;
     color: #fff;
@@ -69,7 +58,6 @@ button {
     border-radius: 3px;
     font-size: 16px;
 }
-
 button:hover {
     background-color: #555;
 }

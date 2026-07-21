@@ -22,7 +22,6 @@
 }
 </style></head>
 <body>
-
 <div class="menu-navigasi">
     <a href="Home Page.html">Home</a>
     <a href="About.html">About</a>
@@ -32,8 +31,6 @@
     <a href="Pendaftaran.html">Pendaftaran</a>
     <a href="Kontak.html">Kontak</a>
 </div>
-
-
     <div class="containerpendaftaran">
         <header>
             <h1>Informasi Pendaftaran Kampus</h1>
@@ -44,8 +41,6 @@
         <header>
             <h2>Isi formulir</h2>
         </header>
-        
-
         <form action="proses_pendaftaran.php" method="post">
             <fieldset>
                 <legend>Data Pribadi</legend>
@@ -74,7 +69,6 @@
                     <input type="tel" id="telepon" name="telepon" required>
                 </div>
             </fieldset>
-
             <fieldset>
                 <legend>Pendidikan Terakhir</legend>
                 <div class="form-group">
@@ -88,10 +82,8 @@
                 <div class="form-group">
                     <label for="tahun_lulus">Tahun Lulus:</label>
                     <input type="number" id="tahun_lulus" name="tahun_lulus" min="1900" max="2099" required>
-                </div>
-                
+                </div>           
             </fieldset>
-
             <fieldset>
                 <legend>Pilihan Program Studi</legend>
                 <div class="form-group">
@@ -100,8 +92,7 @@
                         <option value="">Pilih Program Studi</option>
                         <option value="Teknik Informatika">Teknik Informatika</option>
                         <option value="Manajemen Informasi">Manajemen Informasi</option>
-                        <option value="sistem Komputer">sistem Komputer</option>
-                        
+                        <option value="sistem Komputer">sistem Komputer</option>     
                     </select>
                 </div>
                 <div class="form-group">
@@ -109,10 +100,8 @@
                     <textarea id="keterangan" name="keterangan" rows="4"></textarea>
                 </div>
             </fieldset>
-
             <button type="submit">Kirim Pendaftaran</button>
         </form>
     </div>
-
 </body>
 </html>
