@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Universitas Handayani Makassar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background: #f4f7fb;
+        }
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px 50px;
+        }
+        header h1 {
+            text-align: center;
+        }
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .banner {
+            width: 100%;
+        }
+        .banner img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .info {
+            flex: 1;
+            min-width: 350px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+        }
+        .info h2 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .info p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        .form {
+            flex: 1;
+            min-width: 350px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+        }
+        .form h2 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #003366;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0055aa;
+        }
+        .maps {
+            width: 90%;
+            margin: 40px auto;
+        }
+        .maps h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+        }
+        footer {
+            margin-top: 40px;
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-navigasi {
+            background: #0b63ce;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+        }
+        .menu-navigasi a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .menu-navigasi a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+  <nav class="menu-navigasi">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Programs.html">Programs</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Halaman Berita.html">Berita</a>
+    <a href="Pendaftaran.html">Pendaftaran</a>
+    <a href="Kontak.html">Kontak</a>
+</nav>
+    <header>
+        <h1>UNIVERSITAS HANDAYANI MAKASSAR</h1>
+    </header>
+    <div class="banner">
+        <img src="images/banner.jpg" alt="Banner Kampus">
+    </div>
+    <div class="container">
+        <div class="info">
+            <h2>Informasi Kontak</h2>
+            <p>
+                <b>Alamat</b><br>
+                Jl. Adhyaksa Baru No.1,<br>
+                Makassar, Sulawesi Selatan 90231
+            </p>
+            <p>
+                <b>Telepon</b><br>
+                (0411) 4673395
+            </p>
+            <p>
+                <b>Email</b><br>
+                info@handayani.ac.id
+            </p>
+            <p>
+                <b>Website Resmi</b><br>
+                https://handayani.ac.id
+            </p>
+            <p>
+                <b>Jam Operasional</b><br>
+                Senin - Jumat<br>
+                08.00 - 16.00 WITA
+            </p>
+            <p><b>Media Sosial</b></p>
+            <p>
+                Facebook :
+                <a href="https://www.facebook.com/stmikhdy/?locale=id_ID" target="_blank">
+                    Universitas Handayani Makassar
+                </a>
+            </p>
+            <p>
+                Instagram :
+                <a href="https://www.instagram.com/universitas_handayanimks/" target="_blank">
+                    @universitas_handayanimks
+                </a>
+            </p>
+        </div>
+        <div class="form">
+            <h2>Kirim Pesan</h2>
+            <form>
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subjek">
+                <textarea rows="7" placeholder="Tulis pesan Anda..." required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </div>
+    <div class="maps">
+        <h2>Lokasi Kampus</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3973.700307990384!2d119.448903!3d-5.151849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefb2c3c8cf8c1%3A0xdd68d36bc04fc8c0!2sUniversitas%20Handayani%20Makassar!5e0!3m2!1sid!2sid!4v1710000000000"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+    <footer>
+        <p>© 2026 Universitas Handayani Makassar</p>
+
+        <p>Website Profil Kampus | Tugas Pemrograman Web</p>
+    </footer>
+</body>
+</html>
